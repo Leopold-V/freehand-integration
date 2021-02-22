@@ -1,0 +1,25 @@
+.offer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20rem;
+    width: 100%;
+    border-radius: 15px;
+    background-image: url('../img/offer.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 9rem 0;
+}
+
+.offer-title {
+    font-size: 4rem;
+    font-weight: 500;
+    color: $color-white;
+}
+
+.offer-text {
+    color: rgba($color: #ffffff, $alpha: .6) !important;
+}

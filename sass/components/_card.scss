@@ -1,0 +1,90 @@
+.card-group {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card-service {
+    width: 35.7rem;
+    height: 35rem;
+    border: 2px solid #EFEEF3;
+    border-radius: 8px;
+    padding: 4rem;
+    margin: 1rem 0;
+    transition: all .5s;
+    &:hover {
+        transform: translateY(-30px) scale(1.05);
+        box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: .2);
+    }
+    .card-img {
+        padding: 1.2rem;
+        border: 1px solid #EFEEF3;
+        display: inline;
+        border-radius: 8px;
+    }
+    &:not(:last-child) {
+        margin-right: 4rem;
+    }
+    @media (max-width: 1268px) {
+        margin: 1rem;
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+}
+
+.card-business {
+    width: 36rem;
+    height: 43rem;
+    border-top: 2px solid transparent;
+    border-radius: 0 0 8px 8px;
+    padding: 4rem;
+    text-align: center;
+    margin: 1rem 0;
+    box-shadow: 0 0 3.5rem rgba($color: #000000, $alpha: .03);
+    transition: all .5s;
+    &:hover {
+        transform: translateY(-30px) scale(1.05);
+        box-shadow: 0 1rem 4rem rgba($color: #000000, $alpha: .2);
+    }
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+    .card-img {
+        padding: 1.2rem;
+        border: 1px solid #EFEEF3;
+        display: inline;
+        border-radius: 8px;
+    }
+    .card-business-price {
+        font-size: 4rem;
+        font-weight: 800;
+    }
+    &--blue {
+        border-top: 4px solid $color-secondary;
+        .card-business-price {
+            color: $color-secondary;
+        }
+    }
+    &--green {
+        border-top: 4px solid $color-green;
+        .card-business-price {
+            color: $color-green;
+        }
+    }
+    &--red {
+        border-top: 4px solid $color-red;
+        .card-business-price {
+            color: $color-red;
+        }
+    }
+    @media (max-width: 1268px) {
+        margin: 1rem;
+        &:not(:last-child) {
+            margin-right: 0;
+        }
+    }
+    
+}

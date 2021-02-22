@@ -1,0 +1,21 @@
+.section-service {
+    padding-bottom: 20rem;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+}
+
+.section-feature {
+    padding-bottom: 20rem;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+}
+
+.section-plan {
+    min-height: 50vh;
+    padding-bottom: 20rem;
+    @media (max-width: 1200px) {
+        text-align: center;
+    }
+}

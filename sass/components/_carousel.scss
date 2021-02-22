@@ -1,0 +1,59 @@
+.carousel {
+    position: relative;
+    width: 45%;
+}
+
+.carousel-img-group {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-img {
+    width: 100%;
+    position: absolute;
+    position: block;
+    transform: translateX(-100%);
+    transition: all .5s;
+    &.active {
+        transform: translateX(0);
+    }
+    @media (max-width: 1200px) {
+        width: 70%;
+    }
+}
+
+.carousel-arrow-right {
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 5px;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    background: $color-primary url('/img/arrow_right.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.carousel-arrow-left {
+    position: absolute;
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 5px;
+    top: 50%;
+    left: 0%;
+    transform: translate(-50%,-50%);
+    background: $color-primary url('/img/arrow_left.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    &:hover {
+        opacity: 0.8;
+    }
+}

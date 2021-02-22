@@ -1,0 +1,39 @@
+body {
+    font-family: $font-primary;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    
+}
+
+.paragraph {
+    font-size: 1.8rem;
+    line-height: 2;
+    color: $color-primary;
+}
+
+.description {
+    font-size: 1.6rem;
+    color: $color-primary;
+}
+
+.heading-primary {
+    font-family: $font-secondary;
+    color: $color-primary;
+    font-size: 5.6rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.heading-secondary {
+    font-family: $font-secondary;
+    color: $color-primary;
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.heading-tertiary {
+    font-family: $font-secondary;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
